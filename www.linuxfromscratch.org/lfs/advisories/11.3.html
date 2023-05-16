@@ -1,0 +1,178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+    <title>LFS 11.3 Security Advisories</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+  </head>
+  <body>
+    <div id="banner">
+      <a href="https://www.linuxfromscratch.org/index.html">
+        <img src="../../images/lfs-logo.png" 
+             alt="Linux From Scratch | Your Distro, Your Rules" />
+      </a>
+    </div>
+    
+    <!-- SiteSearch Google -->
+    <form id ="search" method="get" action="https://www.google.com/custom">
+      <p>
+         <input type="hidden" name="client" value="pub-1920546463376456" />
+         <input type="hidden" name="forid" value="1" />
+         <input type="hidden" name="ie" value="ISO-8859-1" />
+         <input type="hidden" name="oe" value="ISO-8859-1" />
+         <input type="hidden" name="safe" value="active" />
+         <input type="hidden" name="cof"
+          value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:128;L:http://www.linuxfromscratch.org/images/lfs-logo.png;S:http://www.linuxfromscratch.org;FORID:1" />
+         <input type="hidden" name="hl" value="en" />
+         <input type="hidden" name="domains" value="linuxfromscratch.org" />
+         <input type="text" name="q" size="31" maxlength="255" id="sbi" />
+      </p>
+      <p>
+         <input type="submit" name="sa" value="Google Search" id="sbb" />
+         <input type="radio" name="sitesearch" value="" id="ss0" />
+         <label for="ss0" title="Search the Web">Web</label>
+         <input type="radio" name="sitesearch" value="linuxfromscratch.org" 
+                checked="checked" id="ss1" />
+         <label for="ss1" title="Search www.linuxfromscratch.org">LFS</label>
+      </p>
+    </form> 
+
+   <!-- Search Mailing Lists -->
+<!--
+   <form id="search" method="get" action="http://search.linuxfromscratch.org/index.cgi">
+     <p>
+      <label title="Enter your search terms">
+        <input type="text" name="query" size="31" maxlength="255" accesskey="s" />
+      </label>
+      <label title="Submit the search terms">
+        <input type="submit" value="Search" />
+      </label>
+     </p>
+   </form>
+-->
+
+    <div class="navbar">
+      <ul id="menu">
+        <li><a id="patches" href="https://www.linuxfromscratch.org/patches/">Patches</a></li>
+        <li><a id="hints" href="https://www.linuxfromscratch.org/hints/">Hints</a></li>
+        <li><a id="alfs" href="https://www.linuxfromscratch.org/alfs/">ALFS</a></li>
+        <li><a id="blfs" href="https://www.linuxfromscratch.org/blfs/">BLFS</a></li>
+        <li><a id="lfsactive" href="https://www.linuxfromscratch.org/lfs/">LFS</a></li>
+      </ul>
+    </div>
+
+<!--        <li><a id="livecd" href="/livecd/">LiveCD</a></li>-->
+<!--        <li><a id="hlfs" href="/hlfs/">HLFS</a></li>-->
+<!--        <li><a id="clfs" href="https://trac.clfs.org/">CLFS</a></li> -->
+
+    <div id="leftmenu">
+      <ul id="lfsmenulist">
+        <li><a href="https://www.linuxfromscratch.org/">Home</a></li>
+        <li><a href="https://www.linuxfromscratch.org/lfs/index.html">LFS Home</a></li>
+        <li><a href="https://www.linuxfromscratch.org/lfs/news.html">News</a></li>
+        <li><a href="https://www.linuxfromscratch.org/lfs/download.html">Download</a></li>
+        <li><a href="https://www.linuxfromscratch.org/lfs/read.html">Read Online</a></li>
+        <li><a href="https://www.linuxfromscratch.org/cgi-bin/lfscounter.php">Get Counted</a></li>
+        <li><a href="https://www.linuxfromscratch.org/lfs/support.html">Support</a></li>
+        <li><a href="https://www.linuxfromscratch.org/mail.html">Mailing Lists</a></li>
+        <li><a href="https://wiki.linuxfromscratch.org/lfs">Wiki</a></li>
+        <li><a href="https://www.linuxfromscratch.org/lfs/contribute.html">Contribute</a></li>
+        <li><a href="https://www.linuxfromscratch.org/mirrors.html">Website Mirrors</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+
+    <h2>LFS Security Advisories for LFS 11.3 and the current development books.</h2>
+
+    <a id="LFS11.3"/>
+    <p>LFS-11.3 was released on 2022-03-01</p>
+
+    <h3>Linux Kernel</h3>
+
+    <a id="sa-11.3-011"/>
+    <h4>11.3 011 Linux Kernel (LFS)     Date: 2023-03-05 Severity: High</h4>
+    <p>In Linux-6.2.3 through 6.2.9 (and Linux-6.1.15 through 6.1.22),
+    eleven security vulnerabilities were fixed in various kernel subsystems.
+    These vulnerabilities could allow full system crash or deadlock,
+    network filter bypass, or local priviledge escalation.
+    Update to Linux-6.2.9 or Linux-6.1.22 (LTS) to fix them.
+    <a href="https://www.linuxfromscratch.org/blfs/advisories/consolidated.html#sa-11.3-011">11.3-011</a></p>
+
+    <a id="sa-11.3-001"/>
+    <h4>11.3 001 Linux Kernel (LFS)     Date: 2023-03-05 Severity: High</h4>
+    <p>In Linux-6.2.2 (and Linux-6.1.14), five security vulnerabilities were
+    fixed in various kernel subsystems.  These vulnerabilities could allow
+    full system crashes or insufficient protection against hardware
+    vulnerabilities.  Update to Linux-6.2.2 or Linux-6.1.14 (LTS) to fix
+    them.
+    <a href="https://www.linuxfromscratch.org/blfs/advisories/consolidated.html#sa-11.3-001">11.3-001</a></p>
+
+     <!-- Editors: Do not remove this entry, just comment it out. -->
+
+<!--
+     <ul>
+       <li>There are currently no known security vulnerabilities for LFS-11.3.</li>
+     </ul>
+-->
+    <!-- Editors: do the consolidated file first, to get the next number.
+         Checking what you have prepared is easier if you can create symlinks
+         in the directory where you put the books' html so that you can see
+         the LFS and BLFS advisories in your browser. -->
+
+<!--
+    <p style="font-style: italic;">This page is in alphabetical order of packages,
+    and if a package has multiple advisories the newer come first.</p>
+
+    <p> The links at the end of each item point to fuller details which have
+    links to the
+    development <!\-\- change to 'released' when links in consolidated are changed
+    after a release \-\->
+    books.</p>-->
+
+    <!-- After a release, copy for next book version, leave just template stuff
+     in that, and note
+     that later advisories will be in the [next release] version -->
+
+    <!-- Editors - do the consolidated page first, to get the next advisory number -->
+
+    <!-- previous glibc text retained as comment, because it is special for
+    rebuilding
+    <h3>Glibc</h3>
+
+    <p style="font-style: italic;">In LFS the only safe way to update Glibc is to
+    build a new system.</p>
+
+    <h4>10.1 NNN Glibc (LFS)  Date: 2021-02-07  Severity: High</h4>
+
+    <p>In Glibc before 2.33 there are four vulnerabilities in iconv which can lead
+    to a crash when processing less-common character encodings.</p>
+
+    <p>Please read the link to assess the severity of this for your use
+    case, and what action to take.
+    <a href="../../blfs/advisories/consolidated.html#10.1-NNN">sa-10.1-NNN</a></p>
+
+    <!\-\- End of Glibc -->
+
+   <!-- start of template
+
+    <h3>PackageName</h3>
+
+    <h4>11.2 NNN PackageName (LFS)  Date: 2022-09-01  Severity: Low</h4>
+    <p>Breif details here. See
+    <a href=i"../../blfs/advisories/consolidated.html#sa-11.2-NNN">11.2-NNN</a></p>
+
+    <!\-\- End of PackageName -->
+    <!-- End of template -->
+
+       <br />
+      <div id="footer">
+       <p>&copy; 1998-2023 Gerard Beekmans. Website design by Jeremy Huntwork &amp; 
+                 Matthew Burgess.</p>
+      </div>
+     </div>
+  </body>
+</html>
+
